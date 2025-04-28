@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game Melhorado</title>
+    <style>
+        body {
+            background: #8b8b8b;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        canvas {
+            background: #333;
+            border: 2px solid #0f0;
+        }
+        #game-over {
+            color: white;
+            font-size: 30px;
+            margin-top: 20px;
+            display: none;
+        }
+        #restart-btn {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background: #0f0;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+        }
+        <head>
+    <title>Snake Game</title>
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Adicionando a fonte do Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        /* Definindo a fonte no corpo e nos elementos do jogo */
+        body, h1, button {
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        /* Estilizando o botão de restart */
+        button {
+            cursor: pointer;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            border-radius: 16px;
+        }
+    </style>
+</head>
+
+    </style>
+</head>
+<body>
+    <canvas id="snake" width="608" height="608"></canvas>
+
+    <div id="game-over-screen" style="display:none; text-align:center; margin-top:20px;">
+        <h1>Game Over</h1>
+        <button onclick="restartGame()" style="padding:10px 20px; font-size:20px;">Jogar Novamente</button>
+    </div>
+    
+    <script src="snake.js"></script>
+    
+    
+</body>
+</html>
